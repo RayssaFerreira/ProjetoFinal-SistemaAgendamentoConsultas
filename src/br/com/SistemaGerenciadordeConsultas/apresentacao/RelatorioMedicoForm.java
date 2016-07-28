@@ -83,8 +83,8 @@ public class RelatorioMedicoForm extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(cmbMedico, 0, 304, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(cmbMedico, 0, 308, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnGerar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
