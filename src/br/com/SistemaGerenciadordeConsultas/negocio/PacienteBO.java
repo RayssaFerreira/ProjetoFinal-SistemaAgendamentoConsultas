@@ -62,8 +62,8 @@ public class PacienteBO {
 
     }
 
-    public void removerPaciente(int id) throws SQLException {
+    public void removerPaciente(int cpf) throws SQLException {
         PacienteDAO pacienteDAO = new PacienteDAO();
-        pacienteDAO.removerPaciente(id);
+        pacienteDAO.removerPaciente(cpf);
     }
 }
