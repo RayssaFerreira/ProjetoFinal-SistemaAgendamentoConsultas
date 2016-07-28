@@ -166,19 +166,14 @@ public class RelatorioPesquisaPorDataForm extends javax.swing.JFrame {
         } catch (ParseException ex) {
             Logger.getLogger(RelatorioPesquisaPorDataForm.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        
-        
+   
         try {
             String relatorio = System.getProperty("user.dir") + "/relatorios/relatorioPorDatas.jasper";
 
-            //Criar a fonte de dados do JasperReport
             JRBeanCollectionDataSource fontedados = new JRBeanCollectionDataSource(consultas);
 
-            //Gerar o relatorio
             JasperPrint relatorioGerado = JasperFillManager.fillReport(relatorio, null, fontedados);
-
-            //Exibir Relatorio
+            
             JasperViewer jasperViewer = new JasperViewer(relatorioGerado, false);
             jasperViewer.setVisible(true);
 
